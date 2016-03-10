@@ -1,4 +1,4 @@
-package dndapp;
+package charcreate;
 
 import java.awt.EventQueue;
 
@@ -11,6 +11,7 @@ public class Controller extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	public static Controller frame;
 	private JPanel contentPane;
 
 	/**
@@ -20,7 +21,7 @@ public class Controller extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Controller frame = new Controller();
+					frame = new Controller();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
