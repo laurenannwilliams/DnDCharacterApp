@@ -1,4 +1,4 @@
-package dndapp;
+package charcreate;
 
 import javax.swing.JPanel;
 import java.awt.BorderLayout;
@@ -52,6 +52,8 @@ public class HomeScreen extends JPanel {
 		JButton btnNew = new JButton("New");
 		btnNew.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				Controller.frame.setContentPane(new RaceScreen());
+				Controller.frame.setVisible(true);
 			}
 		});
 		GridBagConstraints gbc_btnNew = new GridBagConstraints();
